@@ -19,7 +19,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <html lang="en" className={poltawskiNowy.className}>
             <body>
                 <Header />
-                {children}
+                <main>
+                    {children}
+                </main>
             </body>
         </html>
     );
