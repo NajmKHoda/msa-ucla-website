@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
 import { Poltawski_Nowy } from 'next/font/google'
-import "./globals.css";
+import 'material-symbols/outlined.css'
+import './globals.css';
 import Header from '@/components/layout/Header';
 
 export const metadata: Metadata = {
