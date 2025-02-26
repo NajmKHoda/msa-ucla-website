@@ -1,5 +1,4 @@
-import React from 'react';
-import Icon from '../wrappers/Icon';
+import Icon from '../../wrappers/Icon';
 import { MaterialSymbol } from 'material-symbols';
 
 interface PrayerTimeViewProps {
