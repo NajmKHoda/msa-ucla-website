@@ -5,6 +5,8 @@ import { useLayoutEffect, useState } from 'react';
 
 export default function Header() {
     const [scrollPosition, setScrollPosition] = useState(0);
+   
+    const navLinkStyle = 'relative transition-[color] duration-200 ease-out after:bg-msa-yellow after:absolute after:inset-x-0 after:bottom-[-2px] after:h-[3px] after:scale-x-0 after:origin-left after:transition-all after:duration-200 after:ease-out hover:text-msa-yellow hover:after:scale-x-100';
 
     useLayoutEffect(() => {
         // Set initial scroll position on the client side
@@ -25,12 +27,12 @@ export default function Header() {
                 <h1 className='text-4xl text-msa-yellow font-bold'>MSA UCLA</h1>
             </div>
             <nav className='flex justify-between items-center gap-16 font-semibold text-2xl text-text-secondary'>
-                <a>About</a>
-                <a>Events</a>
-                <a>Initiatives</a>
-                <a>Resources</a>
-                <a>Donate</a>
-                <a>Contact</a>
+                <a href="#" className={navLinkStyle}>About</a>
+                <a href="#" className={navLinkStyle}>Events</a>
+                <a href="#" className={navLinkStyle}>Initiatives</a>
+                <a href="#" className={navLinkStyle}>Resources</a>
+                <a href="#" className={navLinkStyle}>Donate</a>
+                <a href="#" className={navLinkStyle}>Contact</a>
             </nav>
         </header>
     );
