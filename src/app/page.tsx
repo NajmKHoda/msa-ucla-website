@@ -1,9 +1,10 @@
+import EventView from '@/components/info/EventView';
 import PrayerTimesList from '@/components/info/PrayerTimes/PrayerTimesList';
-import { CalculationMethod, Coordinates, PrayerTimes } from 'adhan';
 
-const UCLA_COORDS = new Coordinates(34.0722, -118.4427);
-const ISNA_METHOD = CalculationMethod.NorthAmerica();
-const DATE_FORMATTER = Intl.DateTimeFormat('en-US', { timeStyle: 'short' });
+const events = ["Brothers' Basketball", "Sisters' Soccer", "Halaqa", "Jummah", "Qiyam", "Tahajjud"];
+const start = new Date();
+const end = new Date(start);
+end.setHours(end.getHours() + 1);
 
 export default function Home() {
     return (
@@ -18,6 +19,14 @@ export default function Home() {
             <section className='flex flex-col py-5 px-6 gap-4'>
                 <h2 className='text-5xl text-center font-semibold'>Prayer Times</h2>
                 <PrayerTimesList />
+            </section>
+            <section className='flex flex-col py-5 px-6 gap-4'>
+                <h2 className='text-5xl text-center font-semibold'>Upcoming Events</h2>
+                <div className='grid grid-cols-3 gap-[20px]'>
+                    {events.map((event, index) => (
+                        <EventView key={index} eventName={event} start={start} end={end} />
+                    ))}
+                </div>
             </section>
         </>
     );
