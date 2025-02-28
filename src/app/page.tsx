@@ -1,5 +1,6 @@
 import EventView from '@/components/info/EventView';
 import PrayerTimesList from '@/components/info/PrayerTimes/PrayerTimesList';
+import TextCarousel from '@/components/animated/TextCarousel';
 
 const events = ["Brothers' Basketball", "Sisters' Soccer", "Halaqa", "Jummah", "Qiyam", "Tahajjud"];
 const start = new Date();
@@ -14,7 +15,7 @@ export default function Home() {
                 backgroundPosition: '0% 75%'
             }}>
                 <h1 className='text-6xl text-center font-bold text-msa-yellow'>Muslim Student Association at UCLA</h1>
-                <p className='text-5xl text-center font-semibold text-text-secondary'>Assalamualaikum!</p>
+                <TextCarousel texts={['Assalamualaikum!', '!السلام علیکم', 'अस्सलामु अलैकुम!', 'Esselâmü aleyküm!']} />
             </section>
             <section className='flex flex-col py-5 px-6 gap-4'>
                 <h2 className='text-5xl text-center font-semibold'>Prayer Times</h2>

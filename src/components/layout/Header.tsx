@@ -21,7 +21,7 @@ export default function Header() {
     const floatClass = scrollPosition > 0 ? 'bg-msa-blue shadow-md' : '';
 
     return (
-        <header className={`fixed flex justify-between items-center w-full transition duration-200 px-6 py-3 ${floatClass}`}>
+        <header className={`fixed z-50 flex justify-between items-center w-full transition duration-200 px-6 py-3 ${floatClass}`}>
             <div className='flex gap-2 items-center'>
                 <Image src='/logo.png' width={48} height={48} alt='MSA UCLA logo' />
                 <h1 className='text-4xl text-msa-yellow font-bold'>MSA UCLA</h1>
