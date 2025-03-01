@@ -31,9 +31,9 @@ export default function TextCarousel({
             <AnimatePresence mode='wait'>
                 <motion.p
                     key={currentIndex}
-                    initial={{ y: 20, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    exit={{ y: -20, opacity: 0 }}
+                    initial={{ translateY: '50%', opacity: 0 }}
+                    animate={{ translateY: 0, opacity: 1 }}
+                    exit={{ translateY: '-50%', opacity: 0 }}
                     transition={{ duration: 0.5 }}
                     className={className}
                 >
