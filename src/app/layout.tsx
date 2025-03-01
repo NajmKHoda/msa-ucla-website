@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Poltawski_Nowy } from 'next/font/google'
 import 'material-symbols/outlined.css'
 import './globals.css';
-import Header from '@/components/layout/Header';
+import Header from '@/components/layout/Header/Header';
 import Footer from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
