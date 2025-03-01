@@ -40,7 +40,7 @@ export default function PrayerTimesList() {
     const currentPrayer = getCurrentPrayer();
 
     return (
-        <div className='flex flex-row gap-[10px] rounded-[30px] overflow-hidden'>
+        <div className='flex flex-col gap-[5px] lg:flex-row lg:gap-[10px] rounded-xl lg:rounded-3xl overflow-hidden'>
             <PrayerTimeView 
                 prayerName='Fajr' 
                 prayerStartTime={DATE_FORMATTER.format(prayerTimes.fajr)} 
