@@ -17,6 +17,7 @@ export default function Header() {
             setIsFloating(false);
         }
     })
+
     const floatClass = isFloating ? 'bg-msa-blue shadow-md' : 'hover:bg-msa-blue hover:shadow-md';
 
     return (
@@ -25,7 +26,7 @@ export default function Header() {
                 <Image src='/logo.png' width={48} height={48} alt='MSA UCLA logo' />
                 <h1 className='text-4xl text-msa-yellow font-bold'>MSA UCLA</h1>
             </div>
-            <nav className='flex items-stretch font-semibold text-2xl text-text-secondary'>
+            <nav className='flex justify-end items-stretch gap-[3vw] font-semibold text-2xl text-text-secondary'>
                 <MajorNav title='About'>
                     <MinorNav title='Mission Statement' />
                     <MinorNav title='Constitution' />

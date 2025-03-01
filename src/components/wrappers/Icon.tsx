@@ -22,7 +22,7 @@ export default function Icon({ name, className, style, fill, weight, gradient, s
     };
     
     return (
-        <span className={`material-symbols-outlined ${className}`} style={{ ...variableStyle, ...style }}>
+        <span className={`material-symbols-outlined flex items-center justify-center ${className}`} style={{ ...variableStyle, ...style }}>
             {name}
         </span>
     );
