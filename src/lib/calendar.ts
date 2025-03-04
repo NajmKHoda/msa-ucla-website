@@ -22,7 +22,7 @@ export default async function getEvents() {
         const { data } = await calendar.events.list({
             calendarId: process.env.GOOGLE_CALENDAR_ID,
             timeMin: new Date().toISOString(),
-            maxResults: 9,
+            maxResults: 6,
             singleEvents: true,
             orderBy: 'startTime',
         });

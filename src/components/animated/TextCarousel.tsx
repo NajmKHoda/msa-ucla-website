@@ -11,7 +11,7 @@ interface TextCarouselProps {
 
 export default function TextCarousel({ 
     texts, 
-    className = 'text-5xl leading-normal text-center font-semibold text-text-secondary',
+    className = '',
     intervalMs = 3000
 }: TextCarouselProps) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -35,7 +35,7 @@ export default function TextCarousel({
                     animate={{ translateY: 0, opacity: 1 }}
                     exit={{ translateY: '-50%', opacity: 0 }}
                     transition={{ duration: 0.5 }}
-                    className={className}
+                    className={`text-4xl sm:text-5xl leading-normal text-center font-semibold text-text-secondary no-wrap ${className}`}
                 >
                     {texts[currentIndex]}
                 </motion.p>

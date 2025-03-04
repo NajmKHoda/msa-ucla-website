@@ -47,7 +47,7 @@ export default function Footer() {
                         Los Angeles, CA 90024
                     </p>
                     <p>
-                        Website created by <a href='https://www.linkedin.com/in/najmkhoda/'>Najm Hoda '28.</a><br />
+                        Website created by <a href='https://www.linkedin.com/in/najmkhoda/'>Najm Hoda &apos;28.</a><br />
                         Website maintained by AMIN.<br />
                         © {new Date().getFullYear()} MSA UCLA. All rights reserved.
                     </p>
