@@ -37,7 +37,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-grow flex-col gap-[10px] items-center md:items-end justify-between text-center md:text-end'>
+                <div className='flex flex-grow md:flex-grow-0 flex-col gap-[10px] items-center md:items-end justify-between text-center md:text-end'>
                     <a href='https://www.instagram.com/msa_ucla/'>
                         <Image src='/insta.svg' width={36} height={36} alt='Instagram' />
                     </a>
