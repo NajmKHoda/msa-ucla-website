@@ -19,9 +19,9 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang="en" className={poltawskiNowy.className}>
-            <body>
+            <body className='flex flex-col min-h-screen'>
                 <Header />
-                <main>
+                <main className='flex flex-col flex-grow'>
                     {children}
                 </main>
                 <Footer />
