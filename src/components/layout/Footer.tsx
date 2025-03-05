@@ -5,7 +5,7 @@ export default function Footer() {
         <footer className="flex flex-wrap p-[24px] px-[20px] gap-x-[5vw] gap-y-5 items-center bg-msa-blue text-text-secondary">
             <div className='flex flex-1 flex-col gap-[10px]'>
                 <div className='flex gap-[10px] items-center'>
-                    <Image src='/logo.png' width={64} height={64} alt='MSA Logo' />
+                    <Image src='/images/logo.png' width={64} height={64} alt='MSA Logo' />
                     <h1 className='text-5xl text-msa-yellow font-bold text-nowrap'>MSA UCLA</h1>
                 </div>
                 <p className='md:min-w-[440px]'>
@@ -39,7 +39,7 @@ export default function Footer() {
                 </div>
                 <div className='flex flex-grow md:flex-grow-0 flex-col gap-[10px] items-center md:items-end justify-between text-center md:text-end'>
                     <a href='https://www.instagram.com/msa_ucla/'>
-                        <Image src='/insta.svg' width={36} height={36} alt='Instagram' />
+                        <Image src='/images/glyphs/insta_white.svg' width={36} height={36} alt='Instagram' />
                     </a>
                     <p>
                         146 Kerckhoff Hall<br />

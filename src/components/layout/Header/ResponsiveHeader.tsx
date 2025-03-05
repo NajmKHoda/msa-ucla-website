@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useState, ReactNode, useEffect } from 'react';
 import { useMediaQuery } from '@/lib/hooks/useMediaQuery';
 import Icon from '@/components/wrappers/Icon';
+import { usePathname } from 'next/navigation';
 
 interface ResponsiveHeaderProps {
     children?: ReactNode;
@@ -15,8 +16,10 @@ export default function ResponsiveHeader({ children }: ResponsiveHeaderProps) {
     const [isFloating, setIsFloating] = useState(false);
     const [showMenu, setShowMenu] = useState(false);
     const isMobile = useMediaQuery('(max-width: 1024px)');
+    const pathname = usePathname();
 
     useMotionValueEvent(scrollYProgress, 'change', scrollYValue => {
+        if (pathname !== '/') return;
         if (scrollYValue > 0 && !isFloating) {
             setIsFloating(true);
         } else if (scrollYValue === 0 && isFloating) {
@@ -32,13 +35,14 @@ export default function ResponsiveHeader({ children }: ResponsiveHeaderProps) {
        document.body.style.overflow = showMenu ? 'hidden' : 'auto';
     }, [showMenu]);
 
-    const floatClass = isFloating || showMenu ? 'bg-msa-blue shadow-md' : 'hover:bg-msa-blue hover:shadow-md';
+    const positioning = pathname === '/' ? 'fixed' : 'sticky top-0';
+    const floatClass = pathname !== '/' || isFloating || showMenu ? 'bg-msa-blue shadow-md' : 'hover:bg-msa-blue hover:shadow-md';
 
     return (
-        <div className={`fixed z-50 w-full ${showMenu ? 'h-full' : ''} flex flex-col items-stretch`}>
+        <div className={`${positioning} z-50 w-full ${showMenu ? 'h-full' : ''} flex flex-col items-stretch`}>
             <header className={`flex z-[1] justify-between items-stretch w-full transition duration-200 px-6 ${floatClass}`}>
                 <div className='flex py-3 gap-2 items-center'>
-                    <Image src='/logo.png' width={48} height={48} alt='MSA UCLA logo' />
+                    <Image src='/images/logo.png' width={48} height={48} alt='MSA UCLA logo' />
                     <h1 className='text-4xl text-msa-yellow font-bold'>MSA UCLA</h1>
                 </div>
                 {isMobile ? 

@@ -1,5 +1,3 @@
-'use client';
-
 import MajorNav from './MajorNav';
 import MinorNav from './MinorNav';
 import ResponsiveHeader from './ResponsiveHeader';
