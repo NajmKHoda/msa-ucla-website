@@ -1,0 +1,43 @@
+{
+    "al-talib": {
+        "name": "Al-Talib",
+        "summary": "Muslim newsmagazine",
+        "description": "Al-Talib provides an independent perspective on issues important to Muslim communities. Targeting a college-age audience, it seeks to create an outlet for activism on and off campus, a platform for representation of all facets of the Muslim-American communities and a safe space for sensitive topics. This sort of dialogue, no matter how uncomfortable it might be at times, is necessary in order for the community to appreciate and celebrate its diversity.",
+        "directors": ["Maham Kazmi"],
+        "website": "http://al-talib.org",
+        "email": "ccasabal@media.ucla.edu",
+        "instagram": "@altalibnewsmag"
+    },
+    "maps": {
+        "name": "Mentors for Academic and Peer Support",
+        "summary": "Mentorship volunteering",
+        "description": "MAPS is dedicated to improve youth education in Los Angeles. Founded by the MSA at UCLA in 2000, it seeks to strengthen educational equity and inter-community activism. The project takes a proactive, hands-on approach to shaping the futures of at-risk and under-served students in Watts and Downtown Los Angeles. Members of MAPS are on the frontlines of the war on education inequality, mentoring students in everything from college application literacy to gang intervention and drug awareness. Join now and help the students that have been left behind get ahead!",
+        "directors": ["Mazin Awad"],
+        "email": "maps.ucla@gmail.com",
+        "instagram": "@mapsxucla"
+    },
+    "uvp": {
+        "name": "UMMA Volunteer Project",
+        "summary": "Medical volunteering",
+        "description": "UVP's mission is to improve the well-being of underserved communities by ensuring access to high-quality healthcare for all, regardless of financial ability. We create opportunities for refugees, immigrants, unhoused individuals, and others to consult with physicians, learn about preventive health, and gain a clearer understanding of their overall well-being. UVP also provides aspiring healthcare professionals with valuable clinical experience, opportunities to network with physicians and medical students, and insight into the systemic disparities in healthcare through our health fairs. UVP is also launching a new research committee focused on investigating healthcare disparities affecting minority communities in Los Angeles. This initiative aims to shed light on the systemic barriers these groups face, helping to inform and improve access to equitable healthcare.",
+        "directors": ["Zaina Sharqawi"],
+        "email": "umma.clinic.vol@gmail.com",
+        "instagram": "@ummavolunteerproject"
+    },
+    "ampd": {
+        "name": "Academic Mentorship and Professional Development",
+        "summary": "Student mentorship program",
+        "description": "AMPD provides MSA UCLA members services and resources to become stronger Muslim leaders in the academic and professional spheres through free textbook loans and study notes, peer and alumni mentorships, pre-professional workshops and internships. Our peer mentorship program pairs incoming students with the upperclassmen and guides them through the Muslim college student experience. Students are further guided towards the profession they are interested in through internships, pre-professional workshops and an annual networking event.",
+        "directors": ["Taha Ahmed", "Heba Bounar"],
+        "email": "ampd@msabruins.com",
+        "instagram": "@ampducla"
+    },
+    "bmp": {
+        "name": "The Beautiful Mind Project",
+        "summary": "Mental health awareness",
+        "description": "The Beautiful Mind Project aims to construct a well-rounded understanding of mental health in the Muslim community that transcends socio-cultural, political, and physical barriers of stigmatization by utilizing Islamic principles as a source of mental wellness. We aim to emphasizes the delicate balance between mental, spiritual, and physical health by creating a safe space/dialogue for mental, physical and spiritual health wellness, providing access to mental health resources and professionals for Muslim students on campus. We also aim to cultivate Muslim leadership in the field of mental health and wellness by providing information and opportunities to meet with Muslim professionals in this field.",
+        "directors": ["Suzaan Mehreen"],
+        "email": "bmp.ucla@gmail.com",
+        "instagram": "@bmpatucla"
+    }
+}
