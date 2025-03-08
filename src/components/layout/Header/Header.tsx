@@ -1,8 +1,11 @@
 import MajorNav from './MajorNav';
 import MinorNav from './MinorNav';
 import ResponsiveHeader from './ResponsiveHeader';
+import projects from '@/../data/projects.json';
 
 export default function Header() {
+
+
     return (
         <ResponsiveHeader>
             <MajorNav title='About'>
@@ -15,7 +18,11 @@ export default function Header() {
                 <MinorNav title='Past' />
             </MajorNav>
             <MajorNav title='Initiatives'>
-                <MinorNav title='Projects' />
+                <MinorNav title='Projects'>
+                    {Object.entries(projects).map(([id, { shortName }]) => (
+                        <MinorNav key={id} title={shortName} href={`/projects/${id}`} />
+                    ))}
+                </MinorNav>
                 <MinorNav title='Committees' />
                 <MinorNav title='Organizations' />
             </MajorNav>

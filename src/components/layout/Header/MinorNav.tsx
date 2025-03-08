@@ -1,8 +1,51 @@
+'use client';
+
+import Icon from '@/components/wrappers/Icon';
+import { ReactNode, useState } from 'react';
+import NavMenu from './NavMenu';
+import { useMediaQuery } from '@/lib/hooks/useMediaQuery';
+
 interface MinorNavProps {
     title: string;
     href?: string;
+    children?: ReactNode;
 }
 
-export default function MinorNav({ title, href = '#' }: MinorNavProps) {
-    return <a href={href} className='py-2 pl-10 lg:px-2 text-lg text-nowrap text-text-primary bg-bg-primary hover:text-msa-blue hover:bg-bg-secondary transition-colors duration-200 ease-out'>{title}</a>;
+export default function MinorNav({ title, href = '#', children }: MinorNavProps) {
+    const [isSubNavOpen, setIsSubNavOpen] = useState(false);
+    const isMobile = useMediaQuery('(max-width: 1024px)');
+
+    return isMobile ? (
+        <div className='flex flex-col py-1 gap-2 items-stretch'>
+            <div className='flex justify-between items-center pr-5 text-lg text-text-primary'>
+                <a href={href}>{title}</a>
+                {children !== undefined &&
+                <button type='button' onClick={() => setIsSubNavOpen(!isSubNavOpen)}>
+                    <Icon name={isSubNavOpen ? 'arrow_drop_up' : 'arrow_drop_down'} size={28} />
+                </button>}
+            </div>
+            {children !== undefined &&
+                <NavMenu isOpen={isSubNavOpen}>
+                    {children}
+                </NavMenu>
+            }
+        </div>
+    ) : (
+        <div className='relative'>
+            <a 
+                href={href}
+                className='peer flex items-center justify-between py-2 pl-10 lg:px-2 text-lg text-nowrap text-text-primary bg-bg-primary hover:text-msa-blue hover:bg-bg-secondary transition-colors duration-200 ease-out'
+            >
+                {title}
+                {!!children && (
+                    <Icon name='chevron_right' size={24} />
+                )}
+            </a>
+            {children !== undefined &&
+                <NavMenu dropDirection='right'>
+                    {children}
+                </NavMenu>
+            }
+        </div>
+    );
 }

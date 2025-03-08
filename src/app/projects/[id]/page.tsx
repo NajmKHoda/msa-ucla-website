@@ -10,6 +10,7 @@ interface PageParams {
 
 interface Project {
     name: string;
+    shortName: string;
     summary: string;
     description: string;
     directors: string[];
