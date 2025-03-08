@@ -1,5 +1,6 @@
 import Icon from '@/components/wrappers/Icon';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export interface ProjectTemplateProps {
     id: string;
@@ -43,22 +44,22 @@ export default function ProjectTemplate({
                     )}
                     <div className='self-stretch flex flex-col py-4 sm:py-0 gap-3 border-y-4 sm:border-y-0 border-black'>
                         {website && (
-                        <a href={website} className='flex justify-center sm:justify-start gap-1 hover:text-msa-blue transition-colors duration-200 ease-out'>
+                        <Link href={website} className='flex justify-center sm:justify-start gap-1 hover:text-msa-blue transition-colors duration-200 ease-out'>
                             <Icon name='language' size={24} />
                             {new URL(website).hostname}
-                        </a>
+                        </Link>
                         )}
-                        <a href={`mailto:${email}`} className='flex justify-center sm:justify-start gap-1 hover:text-msa-blue transition-colors duration-200 ease-out'>
+                        <Link href={`mailto:${email}`} className='flex justify-center sm:justify-start gap-1 hover:text-msa-blue transition-colors duration-200 ease-out'>
                             <Icon name='mail' size={24} />
                             {email}
-                        </a>
-                        <a 
+                        </Link>
+                        <Link 
                             href={`https://www.instagram.com/${instagram.substring(1)}/`} 
                             className='flex justify-center sm:justify-start gap-1 hover:text-msa-blue transition-colors duration-200 ease-out'
                         >
                             <Image src='/images/glyphs/insta_black.svg' width={24} height={24} alt={`${name} Instagram`} className='text-black' />
                             {instagram}
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className='flex justify-center col-span-1 sm:max-lg:col-span-2'>
