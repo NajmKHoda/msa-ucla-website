@@ -3,9 +3,9 @@ import ProjectTemplate from './ProjectTemplate';
 import projects from '@/../data/projects.json';
 
 interface PageParams {
-    params: {
+    params: Promise<{
         id: string;
-    };
+    }>;
 }
 
 interface Project {
@@ -18,8 +18,8 @@ interface Project {
     instagram: string;
 }
 
-export default function ProjectPage({ params }: PageParams) {
-    const { id } = params;
+export default async function ProjectPage({ params }: PageParams) {
+    const { id } = await params;
     
     if (id in projects === false) notFound();
     const project: Project = projects[id as keyof typeof projects];
