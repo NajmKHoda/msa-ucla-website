@@ -37,3 +37,7 @@ export default async function ProjectPage({ params }: PageParams) {
             instagram={project.instagram} />
     );
 }
+
+export function generateStaticParams() {
+    return Object.keys(projects).map(id => ({ id }));
+}
