@@ -1,0 +1,32 @@
+{
+    "college-day": {
+      "name": "College Day",
+      "description": "The College Day committee is responsible for organizing an event that connects high school students with college experiences, providing them with guidance on applications, campus life, and academic expectations. This event includes guest speakers, panel discussions, and interactive workshops to help students prepare for higher education. The committee ensures that students from diverse backgrounds have access to valuable resources and mentorship opportunities.",
+      "heads": ["Tasnim Jahan", "Ahmed Ghallab", "Hanan Ahmed"]
+    },
+    "ramadan": {
+      "name": "Ramadan",
+      "description": "The Ramadan committee plans and coordinates various activities throughout the holy month of Ramadan, including organizing community iftars, taraweeh prayers, and educational programs about fasting and spirituality. The committee ensures that students observing Ramadan have access to appropriate accommodations on campus and fosters a sense of unity through shared religious and cultural experiences.",
+      "heads": ["Ayub Ali", "Fatima Rahat", "Adam Amir"]
+    },
+    "iaw": {
+      "name": "Islamic Awareness Week",
+      "description": "The Islam Awareness Week (IAW) committee is responsible for planning a week-long series of events aimed at educating the broader campus community about Islam and Muslim identity. This includes panel discussions, interactive exhibits, cultural showcases, and outreach efforts to foster understanding and dispel misconceptions about the faith. The committee works to create a welcoming space for dialogue and engagement.",
+      "heads": ["Abrar Alzabin", "Rumaysa Ahmad"]
+    },
+    "eid": {
+      "name": "Eid",
+      "description": "The Eid committee manages the celebration of Eid on campus, ensuring that Muslim students have a space to come together and mark the occasion joyfully. This includes planning prayer services, festive meals, cultural performances, and social gatherings that bring the community together in a spirit of celebration and gratitude. The committee works to make Eid an inclusive and memorable experience for all attendees.",
+      "heads": ["Mohammad Aljoudi"]
+    },
+    "eoyb": {
+      "name": "End-of-Year Banquet",
+      "description": "The End-of-Year Banquet (EOYB) committee is tasked with planning a formal event to celebrate the achievements of the MSA and its members throughout the academic year. This includes arranging a venue, catering, awards, speeches, and entertainment. The committee ensures that the event is both reflective and celebratory, providing a meaningful conclusion to the year while strengthening community bonds.",
+      "heads": ["Zainab Ibrahim", "Shauda Hossain"]
+    },
+    "yearbook": {
+      "name": "Yearbook",
+      "description": "The Yearbook committee is responsible for compiling and designing the MSA yearbook, which documents the events, milestones, and memorable moments of the year. This includes gathering photographs, writing summaries, designing layouts, and ensuring the final product is a cherished keepsake for members. The committee works creatively to capture the spirit of the MSA and its vibrant community.",
+      "heads": ["Maryam Qureshi", "Zainab Ahmad"]
+    }
+}  
