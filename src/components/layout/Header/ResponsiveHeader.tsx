@@ -42,7 +42,7 @@ export default function ResponsiveHeader({ children }: ResponsiveHeaderProps) {
         <div className={`${positioning} z-50 w-full ${showMenu ? 'h-full' : ''} flex flex-col items-stretch`}>
             <header className={`flex z-[1] justify-between items-stretch w-full transition duration-200 px-6 ${floatClass}`}>
                 <div className='flex py-3 gap-2 items-center'>
-                    <Image src='/images/logo.png' width={48} height={48} alt='MSA UCLA logo' />
+                    <Image src='/images/logo.svg' width={36} height={36} alt='MSA UCLA logo' />
                     <h1 className='text-4xl text-msa-yellow font-bold'>MSA UCLA</h1>
                 </div>
                 {isMobile ? 

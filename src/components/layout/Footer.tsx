@@ -6,7 +6,7 @@ export default function Footer() {
         <footer className="flex flex-wrap p-[24px] px-[20px] gap-x-[5vw] gap-y-5 items-center bg-msa-blue text-text-secondary">
             <div className='flex flex-1 flex-col gap-[10px]'>
                 <div className='flex gap-[10px] items-center'>
-                    <Image src='/images/logo.png' width={64} height={64} alt='MSA Logo' />
+                    <Image src='/images/logo.svg' width={48} height={48} alt='MSA Logo' />
                     <h1 className='text-5xl text-msa-yellow font-bold text-nowrap'>MSA UCLA</h1>
                 </div>
                 <p className='md:min-w-[440px]'>
