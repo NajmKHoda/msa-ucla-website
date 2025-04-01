@@ -27,7 +27,7 @@ export default function TextCarousel({
     }, [texts, intervalMs]);
     
     return (
-        <div className='overflow-hidden'>
+        <div className='p-2 overflow-hidden'>
             <AnimatePresence mode='wait'>
                 <motion.p
                     key={currentIndex}
@@ -35,7 +35,7 @@ export default function TextCarousel({
                     animate={{ translateY: 0, opacity: 1 }}
                     exit={{ translateY: '-50%', opacity: 0 }}
                     transition={{ duration: 0.5 }}
-                    className={`text-4xl sm:text-5xl leading-normal text-center font-semibold text-text-secondary no-wrap ${className}`}
+                    className={`text-4xl sm:text-5xl text-center font-semibold text-text-secondary no-wrap ${className}`}
                 >
                     {texts[currentIndex]}
                 </motion.p>
