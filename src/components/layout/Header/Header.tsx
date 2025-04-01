@@ -10,7 +10,7 @@ export default function Header() {
             <MajorNav title='About'>
                 <MinorNav title='Constitution' />
             </MajorNav>
-            <MajorNav title='Initiatives'>
+            <MajorNav title='Initiatives' href='/initiatives'>
                 <MinorNav title='Projects' href='/projects'>
                     {Object.entries(projects).map(([id, { shortName }]) => (
                         <MinorNav key={id} title={shortName} href={`/projects/${id}`} />
