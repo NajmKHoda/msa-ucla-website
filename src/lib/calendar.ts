@@ -1,28 +1,29 @@
 'use server';
 
+import { Credentials } from 'google-auth-library';
 import { google } from 'googleapis';
 
 const GOOGLE_SERVICE_ACCOUNT_EMAIL = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
 const GOOGLE_PRIVATE_KEY = process.env.GOOGLE_PRIVATE_KEY?.replaceAll('\\n', '\n') ?? '';
 
-export default async function getEvents() {
-    try {
-        // Create a JWT client using service account credentials
-        const jwtClient = new google.auth.JWT(
-            GOOGLE_SERVICE_ACCOUNT_EMAIL,
-            undefined,
-            GOOGLE_PRIVATE_KEY,
-            ['https://www.googleapis.com/auth/calendar.readonly']
-        );
-        await jwtClient.authorize();
+let jwtClient: any | null = null;
+let tokenExpiry = 0;
 
-        const calendar = google.calendar({ version: 'v3', auth: jwtClient });
+export default async function getEvents(
+    startDate: Date = new Date(),
+    endDate: Date | undefined = undefined,
+    maxResults: number = 6
+): Promise<CalendarEvent[]> {
+    try {
+        const client = await authorize();
+        const calendar = google.calendar({ version: 'v3', auth: client });
 
         // Retrieve raw data
         const { data } = await calendar.events.list({
             calendarId: process.env.GOOGLE_CALENDAR_ID,
-            timeMin: new Date().toISOString(),
-            maxResults: 6,
+            timeMin: startDate.toISOString(),
+            timeMax: endDate?.toISOString(),
+            maxResults,
             singleEvents: true,
             orderBy: 'startTime',
         });
@@ -36,7 +37,7 @@ export default async function getEvents() {
                 title: event.summary || 'Event',
                 start: new Date(start!),
                 end: end ? new Date(end) : null,
-                location: event.location,
+                location: event.location ?? null,
             }
         }) || [];
     } catch (error) {
@@ -44,3 +45,32 @@ export default async function getEvents() {
         return [];
     }
 }
+
+export interface CalendarEvent {
+    id: string;
+    title: string;
+    start: Date;
+    end: Date | null;
+    location: string | null;
+}
+
+async function authorize() {
+    const now = Date.now();
+    // If we already have a jwtClient and the token is still valid, return it.
+    if (jwtClient && now < tokenExpiry) {
+        return jwtClient;
+    }
+
+    // Create a new JWT client and authorize it
+    jwtClient = new google.auth.JWT(
+        GOOGLE_SERVICE_ACCOUNT_EMAIL,
+        undefined,
+        GOOGLE_PRIVATE_KEY,
+        ['https://www.googleapis.com/auth/calendar.readonly']
+    );
+    const credentials = await jwtClient.authorize() as Credentials;
+    tokenExpiry = credentials.expiry_date || Date.now() + 3600 * 1000;
+    
+    return jwtClient;
+}
+

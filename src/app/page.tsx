@@ -2,6 +2,7 @@ import EventView from '@/components/info/EventView';
 import PrayerTimesList from '@/components/info/PrayerTimes/PrayerTimesList';
 import TextCarousel from '@/components/animated/TextCarousel';
 import getEvents from '@/lib/calendar';
+import Link from 'next/link';
 
 export default async function Home() {
     const events = await getEvents();
@@ -26,6 +27,7 @@ export default async function Home() {
                         <EventView key={event.id} eventName={event.title} start={event.start} end={event.end} />
                     ))}
                 </div>
+                <Link href='/events' className='text-msa-blue text-center text-2xl'>See all events</Link>
             </section>
         </>
     );

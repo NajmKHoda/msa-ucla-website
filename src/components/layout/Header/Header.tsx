@@ -28,7 +28,7 @@ export default function Header() {
                 <MinorNav title='Chaplaincy' />
                 <MinorNav title='Report an Incident' />
             </MajorNav>
-            <MajorNav title='Events' />
+            <MajorNav title='Events' href='/events' />
             <MajorNav title='Donate' />
             <MajorNav title='Contact' />
         </ResponsiveHeader>
