@@ -8,7 +8,7 @@ export default function Header() {
     return (
         <ResponsiveHeader>
             <MajorNav title='About' href='/about'>
-                <MinorNav title='Constitution' />
+                <MinorNav title='Constitution' href='/constitution'/>
             </MajorNav>
             <MajorNav title='Initiatives' href='/initiatives'>
                 <MinorNav title='Projects' href='/projects'>
