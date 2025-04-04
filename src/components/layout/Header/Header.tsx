@@ -7,7 +7,7 @@ import committees from '@/../data/committees.json';
 export default function Header() {
     return (
         <ResponsiveHeader>
-            <MajorNav title='About'>
+            <MajorNav title='About' href='/about'>
                 <MinorNav title='Constitution' />
             </MajorNav>
             <MajorNav title='Initiatives' href='/initiatives'>
