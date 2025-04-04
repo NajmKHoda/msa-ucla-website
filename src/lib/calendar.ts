@@ -1,12 +1,12 @@
 'use server';
 
-import { Credentials } from 'google-auth-library';
+import { Credentials, JWT } from 'google-auth-library';
 import { google } from 'googleapis';
 
 const GOOGLE_SERVICE_ACCOUNT_EMAIL = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
 const GOOGLE_PRIVATE_KEY = process.env.GOOGLE_PRIVATE_KEY?.replaceAll('\\n', '\n') ?? '';
 
-let jwtClient: any | null = null;
+let jwtClient: JWT | null = null;
 let tokenExpiry = 0;
 
 export default async function getEvents(
