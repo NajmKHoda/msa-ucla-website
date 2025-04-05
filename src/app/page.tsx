@@ -9,9 +9,9 @@ export default async function Home() {
 
     return (
         <>
-            <section className='flex flex-col h-[60vh] px-3 justify-center items-center bg-cover' style={{
-                backgroundImage: 'linear-gradient(0deg, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0.68) 100%), url(/images/eyecatcher.jpeg)',
-                backgroundPosition: '0% 75%'
+            <section className='flex flex-col h-[60vh] px-3 justify-center items-center bg-cover bg-fixed' style={{
+                backgroundImage: 'linear-gradient(0deg, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0.68) 100%), url(/images/eyecatcher.jpg)',
+                backgroundPosition: '50% 50%'
             }}>
                 <h1 className='text-5xl sm:text-6xl text-center font-bold text-msa-yellow'>Muslim Student Association at UCLA</h1>
                 <TextCarousel texts={['Assalamualaikum!', '!السلام علیکم', 'अस्सलामु अलैकुम!', 'Esselâmü aleyküm!']} />
