@@ -23,9 +23,8 @@ export default function Header() {
                 </MinorNav>
             </MajorNav>
             <MajorNav title='Resources'>
-                <MinorNav title='New Students' />
-                <MinorNav title='Housing and Dining' />
-                <MinorNav title='Chaplaincy' />
+                <MinorNav title='New Students' href='/resources/new-students' />
+                <MinorNav title='Chaplaincy' href='/resources/chaplaincy' />
                 <MinorNav title='Report an Incident' />
             </MajorNav>
             <MajorNav title='Events' href='/events' />
