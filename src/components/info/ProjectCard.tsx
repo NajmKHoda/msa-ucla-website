@@ -11,7 +11,7 @@ export default function ProjectCard({ projectId }: ProjectCardProps) {
     const project = projects[projectId];
 
     return (
-        <Link href={`/projects/${projectId}`} className='flex items-center gap-3 p-3 bg-bg-secondary rounded-lg hover:shadow-lg transition-shadow'>
+        <Link href={`/initiatives/projects/${projectId}`} className='flex items-center gap-3 p-3 bg-bg-secondary rounded-lg hover:shadow-lg transition-shadow'>
             <Image src={`/images/projects/${projectId}.png`}
                 width={90} height={90}
                 alt={`${project.name} logo`} 

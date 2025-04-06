@@ -19,20 +19,20 @@ export default function Footer() {
                     <h2 className='text-center text-2xl font-bold'>Quick Links</h2>
                     <div className='flex flex-wrap gap-x-[20px] gap-y-[10px] text-msa-yellow text-xl text-center leading-loose text-nowrap'>
                         <div className='flex flex-col flex-grow basis-[min-content]'>
-                            <Link href='#'>About Us</Link>
-                            <Link href='#'>Events</Link>
-                            <Link href='#'>Projects</Link>
-                            <Link href='#'>Committees</Link>
+                            <Link href='/about'>About Us</Link>
+                            <Link href='/events'>Events</Link>
+                            <Link href='/initiatives/projects'>Projects</Link>
+                            <Link href='/initiatives/committees'>Committees</Link>
                         </div>
                         <div className='flex flex-col flex-grow basis-[min-content]'>
-                            <Link href='#'>Resources</Link>
-                            <Link href='#'>New Students</Link>
-                            <Link href='#'>Chaplaincy</Link>
-                            <Link href='#'>Contact Us</Link>
+                            <Link href='/resources'>Resources</Link>
+                            <Link href='/resources/new-students'>New Students</Link>
+                            <Link href='/resources/chaplaincy'>Chaplaincy</Link>
+                            <Link href='/contact'>Contact Us</Link>
                         </div>
                         <div className='flex flex-col flex-grow basis-[min-content]'>
-                            <Link href='#'>Alumni Assoc.</Link>
-                            <Link href='#'>Manara West</Link>
+                            <Link href='https://www.instagram.com/uclamuslimalumni/'>Alumni Assoc.</Link>
+                            <Link href='https://manarawest.org/'>Manara West</Link>
                             <Link href='https://ca.cair.com/'>CAIR-CA</Link>
                             <Link href='https://ca.cair.com/losangeles/'>CAIR-LA</Link>
                         </div>

@@ -22,7 +22,7 @@ export default function InitiativesPage() {
                     Committees operate directly under the MSA, giving members a way to get involved
                     in critical functions such as planning end-of-year banquets and facilitating the Ramadan experience.
                 </p>
-                <Link href='/committees' className='flex justify-center items-center text-2xl text-msa-blue'>View all committees <Icon name='chevron_right'/></Link>
+                <Link href='/initiatives/committees' className='flex justify-center items-center text-2xl text-msa-blue'>View all committees <Icon name='chevron_right'/></Link>
             </section>
             <section className='flex flex-col gap-2'>
                 <h2 className='text-4xl'>Projects</h2>
@@ -30,7 +30,7 @@ export default function InitiativesPage() {
                     Projects are independent organizations associated with the MSA, each with its own leadership and goals.
                     Our projects focus on community service, outreach, and education, allowing students to engage with the broader community.
                 </p>
-                <Link href='/projects' className='flex justify-center items-center text-2xl text-msa-blue'>View all projects <Icon name='chevron_right'/></Link>
+                <Link href='/initiatives/projects' className='flex justify-center items-center text-2xl text-msa-blue'>View all projects <Icon name='chevron_right'/></Link>
             </section>
             </div>
         </ThumbnailPage>

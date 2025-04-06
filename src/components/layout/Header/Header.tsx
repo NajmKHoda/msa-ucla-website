@@ -11,14 +11,14 @@ export default function Header() {
                 <MinorNav title='Constitution' href='/constitution'/>
             </MajorNav>
             <MajorNav title='Initiatives' href='/initiatives'>
-                <MinorNav title='Projects' href='/projects'>
+                <MinorNav title='Projects' href='/initiatives/projects'>
                     {Object.entries(projects).map(([id, { shortName }]) => (
-                        <MinorNav key={id} title={shortName} href={`/projects/${id}`} />
+                        <MinorNav key={id} title={shortName} href={`/initiatives/projects/${id}`} />
                     ))}
                 </MinorNav>
-                <MinorNav title='Committees' href='/committees'>
+                <MinorNav title='Committees' href='/initiatives/committees'>
                     {Object.entries(committees).map(([id, { name }]) => (
-                        <MinorNav key={id} title={name} href={`/committees#${id}`} />
+                        <MinorNav key={id} title={name} href={`/initiatives/committees#${id}`} />
                     ))}
                 </MinorNav>
             </MajorNav>
