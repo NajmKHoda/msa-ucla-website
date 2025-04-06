@@ -1,9 +1,14 @@
+import ThumbnailPage from '@/components/layout/ThumbnailPage';
 import Icon from '@/components/wrappers/Icon';
 import Link from 'next/link';
 
 export default function InitiativesPage() {
     return (
-        <div className='flex flex-col flex-1 justify-center text-center p-8 gap-6'>
+        <ThumbnailPage
+            thumbnailImage='/images/initiatives.jpg'
+            imageAlt='Muslim women (left) serving food such as sushi to other students (right).'
+            className='flex flex-col justify-center text-center px-8 py-2 md:py-8 gap-6'
+        >
             <h1 className='text-5xl'>Faith through <span className='text-msa-blue'>action</span>.</h1>
             <p>
                 The UCLA MSA believes that faith is more than just belief—it&apos;s action.
@@ -28,6 +33,6 @@ export default function InitiativesPage() {
                 <Link href='/projects' className='flex justify-center items-center text-2xl text-msa-blue'>View all projects <Icon name='chevron_right'/></Link>
             </section>
             </div>
-        </div>
+        </ThumbnailPage>
     )
 }

@@ -23,6 +23,7 @@ export default function Header() {
                 </MinorNav>
             </MajorNav>
             <MajorNav title='Resources'>
+                <MinorNav title='Linktree' href='https://linktr.ee/uclamsa' />
                 <MinorNav title='New Students' href='/resources/new-students' />
                 <MinorNav title='Chaplaincy' href='/resources/chaplaincy' />
                 <MinorNav title='Report an Incident' />
