@@ -24,13 +24,13 @@ export default function Header() {
             </MajorNav>
             <MajorNav title='Resources'>
                 <MinorNav title='Linktree' href='https://linktr.ee/uclamsa' />
+                <MinorNav title='Newsletter' href='https://msabruins.us5.list-manage.com/subscribe?u=afd87c320d17a0be7b1a0ac9a&id=3f7c841056' />
                 <MinorNav title='New Students' href='/resources/new-students' />
                 <MinorNav title='Chaplaincy' href='/resources/chaplaincy' />
-                <MinorNav title='Report an Incident' />
             </MajorNav>
             <MajorNav title='Events' href='/events' />
-            <MajorNav title='Donate' />
-            <MajorNav title='Contact' />
+            <MajorNav title='Donate' href='https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=ZD6GK28V6E7ZA&ssrt=1743963248042' />
+            <MajorNav title='Contact' href='/contact' />
         </ResponsiveHeader>
     );
 }
