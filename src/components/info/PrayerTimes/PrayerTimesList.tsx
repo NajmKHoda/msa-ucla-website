@@ -19,6 +19,7 @@ export default function PrayerTimesList() {
         const prayerInfo = new PrayerTimes(UCLA_COORDS, now, ISNA_METHOD);
         return {
             fajr: prayerInfo.fajr,
+            sunrise: prayerInfo.sunrise,
             dhuhr: prayerInfo.dhuhr,
             asr: prayerInfo.asr,
             maghrib: prayerInfo.maghrib,
@@ -30,7 +31,10 @@ export default function PrayerTimesList() {
         const currentTime = now.getTime();
         
         if (currentTime < prayerTimes.fajr.getTime()) return 'isha';
-        if (currentTime < prayerTimes.dhuhr.getTime()) return 'fajr';
+        if (currentTime < prayerTimes.dhuhr.getTime()) {
+            if (currentTime < prayerTimes.sunrise.getTime()) return 'fajr';
+            return 'none';
+        }
         if (currentTime < prayerTimes.asr.getTime()) return 'dhuhr';
         if (currentTime < prayerTimes.maghrib.getTime()) return 'asr';
         if (currentTime < prayerTimes.isha.getTime()) return 'maghrib';
