@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🕌 MSA UCLA Website
 
-## Getting Started
+The official open-source website for the Muslim Student Association at UCLA. Built to serve hundreds of Muslim Bruins with resources, events, and essential MSA initiatives.
 
-First, run the development server:
+![Screenshot of current MSA website](readme_ss.jpeg)
 
-```bash
+## 🖥️ Demo
+
+The website is currently deployed at [msaucla.com](https://msaucla.com).
+
+## ⭐️ Features
+
+- 📅 **Dynamic event calendar** synced with Google Calendar
+- 💻 **Fully responsive design**; optimized for both desktop and mobile
+- 🎨 **Modern UI** designed in Figma with a clean, Islamic aesthetic
+- ✍️ **Easy editability** with [`data/*.json`](/data) files for projects and committees
+
+## 🚀 Installation
+
+You will need `npm` and Node.js v18+ to run the website on your local computer.
+
+Run the following commands:
+```sh
+git clone https://github.com/NajmKHoda/msa-ucla-website.git
+cd msa-ucla-website
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The website should now be live at [`http://localhost:3000`](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💪 Contributors
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Najm Hoda** - Lead website developer and designer
+- **MSA Public Relations** - Website image provider
+- **MSA External Affairs** - MSA Resources
