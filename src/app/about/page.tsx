@@ -4,7 +4,7 @@ export default function AboutPage() {
     return (
         <>
             <div className='h-[50vh] max-h-[450px]' style={{
-                background: 'url(images/banners/about/top.jpg) lightgray no-repeat',
+                background: 'url(images/eyecatcher.jpg) lightgray no-repeat',
                 backgroundPosition: '50% 35%',
                 backgroundSize: 'cover',
             }}/>
