@@ -23,10 +23,14 @@ export default function Header() {
                 </MinorNav>
             </MajorNav>
             <MajorNav title='Resources' href='/resources'>
-                <MinorNav title='Linktree' href='https://linktr.ee/uclamsa' />
-                <MinorNav title='Newsletter' href='https://msabruins.us5.list-manage.com/subscribe?u=afd87c320d17a0be7b1a0ac9a&id=3f7c841056' />
                 <MinorNav title='New Students' href='/resources/new-students' />
                 <MinorNav title='Chaplaincy' href='/resources/chaplaincy' />
+                <MinorNav title='Linktree' href='https://linktr.ee/uclamsa' />
+                <MinorNav title='Newsletter' href='https://msabruins.us5.list-manage.com/subscribe?u=afd87c320d17a0be7b1a0ac9a&id=3f7c841056' />
+                <MinorNav title='Find Roommates'>
+                    <MinorNav title='Brothers' href='https://docs.google.com/spreadsheets/d/1lS8UPC1GZzOhFUuPWDh9equ1J8EigXpfkrKTRCnSwLw/edit?usp=sharing' />
+                    <MinorNav title='Sisters' href='https://docs.google.com/spreadsheets/d/17j3ELFg3evAbDJb10sIr56ksfJ_u2IIWtUUpU43kMOM/edit?usp=sharing' />
+                </MinorNav>
             </MajorNav>
             <MajorNav title='Events' href='/events' />
             <MajorNav title='Donate' href='https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=ZD6GK28V6E7ZA&ssrt=1743963248042' />
