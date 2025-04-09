@@ -7,7 +7,7 @@ export default function Footer() {
             <div className='flex flex-1 flex-col gap-[10px]'>
                 <div className='flex gap-[10px] items-center'>
                     <Image src='/images/logo.svg' width={48} height={48} alt='MSA Logo' />
-                    <h1 className='text-5xl text-msa-yellow font-bold text-nowrap'>MSA UCLA</h1>
+                    <h1 className='text-5xl text-msa-yellow font-bold text-nowrap'>UCLA MSA</h1>
                 </div>
                 <p className='md:min-w-[440px]'>
                     The Muslim Student Association at UCLA is dedicated to fostering a welcoming and inclusive community for Muslim students.

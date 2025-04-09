@@ -32,14 +32,14 @@ export default function ResourcesPage() {
                     url="/resources/new-students" 
                     icon={<Icon name='diversity_3' size={128} />}
                 >
-                    <h2>New Students</h2>
+                    <h2 className='font-semibold text-msa-blue'>New Students</h2>
                 </ResourceCard>
 
                 <ResourceCard 
                     url="/resources/chaplaincy" 
                     icon={<Icon name='mosque' size={128} />}
                 >
-                    <h2>Chaplaincy</h2>
+                    <h2 className='font-semibold text-msa-blue'>Chaplaincy</h2>
                 </ResourceCard>
             </div>
         </ThumbnailPage>

@@ -9,7 +9,7 @@ export default function AboutPage() {
                 backgroundSize: 'cover',
             }}/>
             <div className='flex flex-col items-center justify-center'>
-                <h1 className='mt-5 mb-2 text-4xl text-center font-bold'>We are <span className='text-msa-blue'>MSA UCLA</span>.</h1>
+                <h1 className='mt-5 mb-2 text-4xl text-center font-bold'>We are <span className='text-msa-blue'>UCLA MSA</span>.</h1>
                 <p className='max-w-[750] px-4 pb-5 md:pb-0 text-center'>
                     Since its establishment in 1964, the MSA at UCLA has focused on three fundamentals of the Muslim college experience:
                     rooting Muslim Bruins in their faith, establishing a unified family across our diverse community,

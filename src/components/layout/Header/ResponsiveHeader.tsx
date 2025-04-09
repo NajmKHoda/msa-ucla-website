@@ -44,7 +44,7 @@ export default function ResponsiveHeader({ children }: ResponsiveHeaderProps) {
             <header className={`flex z-[1] justify-between items-stretch w-full transition duration-200 px-6 ${floatClass}`}>
                 <Link href='/' className='flex py-3 gap-2 items-center'>
                     <Image src='/images/logo.svg' width={36} height={36} alt='MSA UCLA logo' />
-                    <h1 className='text-4xl text-msa-yellow font-bold'>MSA UCLA</h1>
+                    <h1 className='text-4xl text-msa-yellow font-bold'>UCLA MSA</h1>
                 </Link>
                 {isMobile ? 
                 <button type='button' onClick={() => setShowMenu(!showMenu)}>
