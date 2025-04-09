@@ -12,11 +12,11 @@ export default function NavMenu({ isOpen = false, children, dropDirection = 'dow
     const isMobile = useMediaQuery('(max-width: 1024px)');
 
     if (isMobile) {
-        return isOpen ? (
-            <div className='flex flex-col items-stretch bg-bg-secondary pl-6'>
+        return (
+            <div className={`${isOpen ? 'flex' : 'hidden'} flex-col items-stretch bg-bg-secondary pl-6`}>
                 {children}
             </div>
-        ) : null;
+        ) 
     }
     
     const dropClass = dropDirection === 'down' ?

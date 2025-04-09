@@ -5,6 +5,7 @@ import { ReactNode, useState } from 'react';
 import NavMenu from './NavMenu';
 import { useMediaQuery } from '@/lib/hooks/useMediaQuery';
 import Link from 'next/link';
+import { useMenuState } from '@/lib/hooks/useMenuContext';
 
 interface MinorNavProps {
     title: string;
@@ -15,11 +16,12 @@ interface MinorNavProps {
 export default function MinorNav({ title, href = '#', children }: MinorNavProps) {
     const [isSubNavOpen, setIsSubNavOpen] = useState(false);
     const isMobile = useMediaQuery('(max-width: 1024px)');
+    const [_, setMenuShown] = useMenuState();
 
     return isMobile ? (
         <div className='flex flex-col py-1 gap-2 items-stretch'>
             <div className='flex justify-between items-center pr-5 text-lg text-text-primary'>
-                <Link href={href}>{title}</Link>
+                <Link href={href} onClick={() => setMenuShown(false)}>{title}</Link>
                 {children !== undefined &&
                 <button type='button' onClick={() => setIsSubNavOpen(!isSubNavOpen)}>
                     <Icon name={isSubNavOpen ? 'arrow_drop_up' : 'arrow_drop_down'} size={28} />
