@@ -16,7 +16,7 @@ interface MinorNavProps {
 export default function MinorNav({ title, href = '#', children }: MinorNavProps) {
     const [isSubNavOpen, setIsSubNavOpen] = useState(false);
     const isMobile = useMediaQuery('(max-width: 1024px)');
-    const [_, setMenuShown] = useMenuState();
+    const setMenuShown = useMenuState()[1];
 
     return isMobile ? (
         <div className='flex flex-col py-1 gap-2 items-stretch'>

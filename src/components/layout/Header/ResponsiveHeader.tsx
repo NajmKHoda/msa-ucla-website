@@ -2,7 +2,7 @@
 
 import { AnimatePresence, useMotionValueEvent, useScroll, motion } from 'framer-motion';
 import Image from 'next/image';
-import { useState, ReactNode, useEffect, useContext, createContext } from 'react';
+import { useState, ReactNode, useEffect } from 'react';
 import { useMediaQuery } from '@/lib/hooks/useMediaQuery';
 import Icon from '@/components/wrappers/Icon';
 import { usePathname } from 'next/navigation';
